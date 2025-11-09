@@ -4,12 +4,16 @@ import RealTimeNotification from '../Components/RealTimeNotification/RealTimeNot
 import Categories from '../Components/Categories/Categories';
 import SwipeHome from '../Components/SwiperHome/SwiperHome';
 import Support from '../Components/Support/Support';
+import RecentBills from '../Components/RecentBills/RecentBills';
+
+
 
 const Home = () => {
     return (
         <MyContainar>
             <SwipeHome />
             <Categories />
+            <RecentBills />
             <RealTimeNotification />
             <Support />
         </MyContainar>

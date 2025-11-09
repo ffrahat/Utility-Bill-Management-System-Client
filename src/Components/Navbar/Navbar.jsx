@@ -4,6 +4,7 @@ import MyLink from '../../Style/MyLink';
 import useAuth from '../../Hooks/useAuth';
 import { toast } from 'react-toastify';
 import { ClipLoader } from 'react-spinners';
+import { CreditCard } from 'lucide-react';
 
 
 const Navbar = () => {
@@ -69,7 +70,12 @@ const Navbar = () => {
        
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl">Pay <span className='text-blue-400'>Bills</span></a>
+    <a
+  className="flex items-center gap-2 text-2xl font-bold text-gray-800 hover:text-[#2841C5] transition-colors"
+>
+  <CreditCard size={28} className="text-[#2841C5]" />
+  Pay <span className="text-[#1d74ff]">Bills</span>
+</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

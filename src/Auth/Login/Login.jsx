@@ -10,6 +10,9 @@ const Login = () => {
 
   // Navigate home
   const navigate = useNavigate();
+  if (user) {
+    return <Navigate to='/' />
+  }
 
 
   // Google Login

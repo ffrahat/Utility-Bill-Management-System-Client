@@ -19,19 +19,19 @@ const Support = () => {
                         <p>There are many variations of passages of Lorem Ipsum available, but the have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use...</p>
                     </div>
                     <div className='grid grid-cols-1 md:grid-cols-2 mt-3 gap-5 md:gap-10'>
-                        <div className='hover:text-[#2841C5] hover:shadow-xl border border-gray-200 rounded-md h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
+                        <div className='hover:text-[#2841C5] hover:shadow-sm border border-gray-200 rounded-xl transition hover:-translate-y-2 duration-500 h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
                             <img src={redriconImg} alt="" />
                             <p className='font-semibold text-2xl'>Secure Payment</p>
                         </div>
-                        <div className='hover:text-[#2841C5] hover:shadow-xl border border-gray-200 rounded-md h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
+                        <div className='hover:text-[#2841C5] hover:shadow-sm border border-gray-200 rounded-xl transition hover:-translate-y-2 duration-500 h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
                             <img src={suppotationImg} alt="" />
                             <p className='font-semibold text-2xl'>Refer & Earn</p>
                         </div>
-                        <div className='hover:text-[#2841C5] hover:shadow-xl border border-gray-200 rounded-md h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
+                        <div className='hover:text-[#2841C5] hover:shadow-sm border border-gray-200 rounded-xl transition hover:-translate-y-2 duration-500 h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
                             <img src={paymentImg} alt="" />
                             <p className='font-semibold text-2xl'>Trust pay</p>
                         </div>
-                        <div className='hover:text-[#2841C5] hover:shadow-xl border border-gray-200 rounded-md h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
+                        <div className='hover:text-[#2841C5] hover:shadow-sm border border-gray-200 rounded-xl transition hover:-translate-y-2 duration-500 h-[200px] flex items-center justify-center flex-col gap-4 bg-white'>
                             <img src={paionImg} alt="" />
                             <p className='font-semibold text-2xl'>24X7 Support</p>
                         </div>
