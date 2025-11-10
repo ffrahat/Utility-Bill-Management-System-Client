@@ -6,6 +6,7 @@ import Registar from "../Auth/Registar/Registar";
 import PrivateRoutes from "../Auth/PrivateRoutes/PrivateRoutes";
 import Contact from "../Pages/Contact";
 import Bills from "../Pages/Bills";
+import BillDetails from "../Components/BillDetails/BillDetails";
 
 
 const router = createBrowserRouter([
@@ -32,7 +33,12 @@ const router = createBrowserRouter([
             {
                 path: 'bills',
                 Component: Bills
+            },
+            {
+                path: 'bill-details/:id',
+                element: <PrivateRoutes><BillDetails /></PrivateRoutes>
             }
+            
         ]
     }
 ]);

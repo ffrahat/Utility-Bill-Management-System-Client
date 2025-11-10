@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, Calendar, Folder, ArrowRight, DollarSign } from "lucide-react";
+import { Link } from "react-router";
 
 const BillCards = ({ bill }) => {
   const date = new Date(bill.created_at);
@@ -57,20 +58,22 @@ const BillCards = ({ bill }) => {
           ) : (
             <p className="flex items-center gap-2">
               <Calendar size={18} className="text-[#2841C5]" />
-              <span className="font-medium">Date:</span> {bill.date}
+              <span className="font-medium">Date:</span> {formattedDate}
             </p>
           )}
         </div>
       </div>
 
       {/* Button */}
-      <button className="mt-5 w-full flex items-center justify-center gap-2 bg-[#2841C5] hover:bg-[#1f31a1] text-white font-semibold py-2.5 rounded-lg transition-all duration-300 cursor pointer active:translate-x-1">
+      <Link to={`/bill-details/${bill._id}`}>
+          <button className="mt-5 w-full flex items-center justify-center gap-2 bg-[#2841C5] hover:bg-[#1f31a1] text-white font-semibold py-2.5 rounded-lg transition-all duration-300 cursor pointer active:translate-x-1">
         See Details
         <ArrowRight
           size={16}
           className="group-hover:translate-x-1 transition-transform duration-300 cursor-pointer"
         />
       </button>
+      </Link>
     </div>
   );
 };
