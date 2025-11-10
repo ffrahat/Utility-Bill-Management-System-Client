@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
+import bannerOneImg from '../../assets/One.png'
+import bannerTwoImg from '../../assets/two.png'
+import bannerThreeImg from '../../assets/three.png'
 
 
 // Swiper এর base CSS
@@ -37,22 +40,19 @@ const SwipeHome = () => {
       id: 1,
       name: "RAHAT",
       title: "I AM IN THE HAXKER",
-      image:
-        "https://www.shutterstock.com/image-photo/omni-channel-marketing-coccept-seamless-260nw-2437410725.jpg",
+      image: bannerOneImg,
     },
     {
       id: 2,
       name: "Mahtab",
       title: "I AM IN Cllage",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZGuKLKXbSKgkjuChhj5OZMHI3sk5VB2rESk-bEijxogGUzzffgBVmkwv9n3e8lAFEJAM&usqp=CAU",
+      image: bannerTwoImg,
     },
     {
       id: 3,
       name: "Mafin",
       title: "I AM IN School BUs",
-      image:
-        "https://wmpromus.com/app/uploads/2021/08/AdobeStock_376474383-scaled.jpeg",
+      image: bannerThreeImg,
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ const SwipeHome = () => {
   ];
 
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]} // navigation + dots + autoplay
         onSwiper={setSwiperInstance} // save swiper instance
@@ -80,9 +80,9 @@ const SwipeHome = () => {
           <SwiperSlide className="relative p-2" key={myFeture.id}>
             <div
             //   style={{ backgroundImage: `url(${myFeture.image})` }}
-              className="flex relative bg-center bg-cover bg-no-repeat justify-center  items-center h-[200px] md:h-[350px] bg-gray-100 text-xl font-semibold "
+              className="flex relative bg-center bg-cover bg-no-repeat justify-center  items-center h-[200px] md:h-[350px] bg-gray-100 text-xl font-semibold rounded-2xl"
                 >
-                    <img className="w-full absolute z-0 h-full object-cover" src={myFeture.image} alt="" />
+                    <img className="w-full absolute z-0 h-full object-cover rounded-2xl" src={myFeture.image} alt="" />
                     <motion.div
                         key={activeIndex} // ✅ key change হলে animation পুনরায় trigger হব
                         initial={{ opacity: 0, y: 20 }} // start state

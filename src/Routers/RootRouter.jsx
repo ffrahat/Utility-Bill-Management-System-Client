@@ -5,6 +5,7 @@ import Login from "../Auth/Login/Login";
 import Registar from "../Auth/Registar/Registar";
 import PrivateRoutes from "../Auth/PrivateRoutes/PrivateRoutes";
 import Contact from "../Pages/Contact";
+import Bills from "../Pages/Bills";
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: 'contact',
                 element: <PrivateRoutes> <Contact /> </PrivateRoutes>
+            },
+            {
+                path: 'bills',
+                Component: Bills
             }
         ]
     }

@@ -93,7 +93,7 @@ const Navbar = () => {
             </div> :
             <div className='flex items-center gap-4'>
               <Link to='/login'><button className='btn p-6 hover:text-white hover:bg-[#2840BF] border bg-transparent text-[#2840BF]'>LogIn</button></Link>
-              <Link to='/registar'><button className='btn p-6 text-white bg-[#2840BF] border hover:bg-transparent hover:text-[#2840BF]'>Registar</button></Link>
+              <Link to='/registar'><button className='btn p-6 hidden md:flex text-white bg-[#2840BF] border hover:bg-transparent hover:text-[#2840BF]'>Registar</button></Link>
             </div>
     }
   </div>

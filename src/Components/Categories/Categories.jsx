@@ -17,13 +17,13 @@ const Categories = () => {
   ];
 
   return (
-    <div className="my-10 py-10">
-      <div className="flex py-5 items-center justify-between mb-5">
+    <div className="my-10 py-10 ">
+      <div className="flex items-center justify-between mb-5">
         <div>
           <p className="font-semibold text-2xl md:text-3xl">Categories</p>
         </div>
         <div>
-          <button className="text-[18px] flex items-center gap-2 cursor-pointer hover:opacity-50 duration-300 transition">
+          <button className=" flex items-center gap-2 cursor-pointer hover:opacity-50 duration-300 transition">
             View All{" "}
             <span className="transform transition-transform duration-300 group-hover:translate-x-1">
               <IoIosArrowForward />
