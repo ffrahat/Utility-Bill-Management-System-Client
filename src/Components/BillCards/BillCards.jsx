@@ -21,6 +21,12 @@ const BillCards = ({ bill }) => {
         {bill.title} - {month}
       </h3>
 
+      {bill.image &&
+            <div className="w-full h-[100px] mb-3">
+              <img className="h-full " src={bill.image} alt="" />
+            </div>
+          }
+
       {/* Info */}
       <div
         className={`space-y-2 text-gray-600 text-sm ${
@@ -28,6 +34,7 @@ const BillCards = ({ bill }) => {
         }`}
       >
         <div className="space-y-2">
+          
           <p className="flex items-center gap-2">
             <Folder size={18} className="text-[#2841C5]" />
             <span className="font-medium">Category:</span> {bill.category}

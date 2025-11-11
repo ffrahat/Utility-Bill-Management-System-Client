@@ -7,12 +7,14 @@ import PrivateRoutes from "../Auth/PrivateRoutes/PrivateRoutes";
 import Contact from "../Pages/Contact";
 import Bills from "../Pages/Bills";
 import BillDetails from "../Components/BillDetails/BillDetails";
+import Error404 from "../Components/Error/Error404";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         Component: MainLayout,
+        errorElement: <Error404 />,
         children: [
             {
                 index: true,
