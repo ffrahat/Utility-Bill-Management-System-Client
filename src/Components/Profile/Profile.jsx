@@ -1,11 +1,24 @@
 import React from "react";
 import { Edit, LogOut, X } from "lucide-react";
-import { Link } from "react-router"; // react-router-dom import
+import { Link, useNavigate } from "react-router"; // react-router-dom import
 import useAuth from "../../Hooks/useAuth";
 import MyContainar from "../../Layouts/MyContainar";
+import { toast } from "react-toastify";
 
 const Profile = () => {
-  const { user, handleLogOut } = useAuth(); // যদি handleLogOut available থাকে
+
+  const { user, logOutUser, setLoading } = useAuth(); 
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+      logOutUser()
+        .then(() => {
+          toast.success("Logout SUccessfull");
+          navigate("/");
+        })
+        .catch((err) => console.log(err))
+        .finally(() => setLoading(false));
+    };
 
   return (
     <MyContainar>
